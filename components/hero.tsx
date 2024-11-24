@@ -2,31 +2,80 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="container flex flex-col items-center justify-center min-h-[calc(100vh-3.5rem)] py-12 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Welcome to <span className="text-primary">Modern App</span>
-        </h1>
-        <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 mt-4">
-          Built with Next.js, shadcn/ui, and Framer Motion for beautiful, responsive, and animated user interfaces.
-        </p>
-        <div className="flex justify-center gap-4 mt-8">
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button size="lg">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+    <section className="min-h-screen flex items-center justify-center relative">
+      <div className="container px-4 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center"
+        >
+          <motion.h1 
+            className="text-5xl md:text-7xl font-bold mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            John Doe
+          </motion.h1>
+          <motion.h2 
+            className="text-2xl md:text-3xl text-muted-foreground mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            Full Stack Developer
+          </motion.h2>
+          
+          <motion.div 
+            className="flex flex-wrap justify-center gap-4 mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <Link href="https://github.com" target="_blank">
+              <Button variant="ghost" size="icon">
+                <Github className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="https://linkedin.com" target="_blank">
+              <Button variant="ghost" size="icon">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="mailto:john@example.com">
+              <Button variant="ghost" size="icon">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="https://drive.google.com/your-resume-link" target="_blank">
+              <Button variant="default" className="gap-2">
+                <FileText className="h-4 w-4" />
+                Resume
+              </Button>
+            </Link>
           </motion.div>
-        </div>
-      </motion.div>
-    </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          >
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+            >
+              <ArrowDown className="h-6 w-6" />
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
   );
 }
