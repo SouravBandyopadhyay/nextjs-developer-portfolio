@@ -31,12 +31,12 @@ export function Navigation() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <motion.span 
+            <motion.span
               className="font-bold text-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-     Sourav Bandyopadhyay
+              Sourav Bandyopadhyay
             </motion.span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -55,12 +55,12 @@ export function Navigation() {
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex items-center justify-between md:w-auto">
             <Link href="/" className="mr-6 flex items-center space-x-2 md:hidden">
-              <motion.span 
+              <motion.span
                 className="font-bold text-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-       Sourav Bandyopadhyay
+                Sourav Bandyopadhyay
               </motion.span>
             </Link>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
