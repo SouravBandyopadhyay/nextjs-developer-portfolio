@@ -21,7 +21,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            John Doe
+     Sourav Bandyopadhyay
           </motion.h1>
           <motion.h2 
             className="text-2xl md:text-3xl text-muted-foreground mb-8"

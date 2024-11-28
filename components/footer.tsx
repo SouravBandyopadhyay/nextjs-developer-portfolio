@@ -20,7 +20,7 @@ export function Footer() {
         >
           <Heart className="h-4 w-4 text-red-500 fill-red-500" />
         </motion.div>
-        <span>by John Doe</span>
+        <span>by Sourav Bandyopadhyay</span>
       </div>
     </footer>
   );

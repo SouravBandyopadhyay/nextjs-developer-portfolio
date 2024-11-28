@@ -36,7 +36,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              John Doe
+     Sourav Bandyopadhyay
             </motion.span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -60,7 +60,7 @@ export function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                John Doe
+       Sourav Bandyopadhyay
               </motion.span>
             </Link>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>

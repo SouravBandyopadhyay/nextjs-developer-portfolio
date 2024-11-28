@@ -9,8 +9,8 @@ import { SocialBar } from '@/components/social-bar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'John Doe | Full Stack Developer',
-  description: 'Portfolio of John Doe - Full Stack Developer specializing in modern web technologies',
+  title: 'Sourav Bandyopadhyay | Software Developer',
+  description: 'Portfolio of Sourav Bandyopadhyay - Full Stack Developer specializing in modern web technologies',
 };
 
 export default function RootLayout({
