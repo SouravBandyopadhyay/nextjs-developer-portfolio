@@ -3,7 +3,8 @@ name: Docker Image CI/CD
 on:
   push:
     branches:
-      - tenant1
+    # main is tenant1
+      - main 
       - tenant2
 
 jobs:
