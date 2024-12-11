@@ -60,7 +60,7 @@ export function About() {
               transition={{ duration: 0.5 }}
               className="space-y-6"
             >
-              <h3 className="text-2xl font-semibold">Hi, I'm John Doe</h3>
+              <h3 className="text-2xl font-semibold">Hi, I&apos;m John Doe</h3>
               <p className="text-lg text-muted-foreground">
                 A passionate full-stack developer with 5 years of experience in building web applications.
                 I specialize in creating beautiful, performant, and user-friendly solutions using modern technologies.
