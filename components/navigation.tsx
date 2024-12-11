@@ -36,7 +36,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Sourav Bandyopadhyay
+              John Doe
             </motion.span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
